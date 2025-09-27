@@ -1,167 +1,143 @@
-//Sat Sep 27 2025 14:46:37 GMT+0000 (Coordinated Universal Time)
+//Sat Sep 27 2025 14:53:27 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var encode_version = "jsjiami.com.v5";
-layui.use(["form", "layer", "jquery"], function () {
-  var _0x4d18fe = layui.form;
-  var _0x5aa06e = layui.layer;
-  var _0x222b41 = layui.jquery;
-  _0x4d18fe.on("submit(submitBtn1)", function (_0x1a6ec5) {
-    var _0x1a4318 = _0x1a6ec5.field.user1;
-    var _0x15cf1d = _0x1a6ec5.field.ps1;
-    var _0x1eacdb = _0x1a6ec5.field.bs1;
-    if (!_0x1a4318 || !_0x15cf1d || !_0x1eacdb) {
-      _0x5aa06e.msg("请确保各项不能为空", {
-        shadeClose: true,
-        offset: "auto",
-        end: function () {}
-      });
-      return false;
+function e() {
+  new PerformanceObserver(_0x2a1e91 => {
+    _0x2a1e91.getEntries().forEach(_0x5b819f => {
+      "navigation" === _0x5b819f.entryType && console.log("页面加载时间:", _0x5b819f.loadEventEnd - _0x5b819f.loadEventStart);
+    });
+  }).observe({
+    entryTypes: ["navigation", "measure"]
+  });
+}
+function n() {
+  let _0x3d1d14;
+  let _0x19c89b = 0;
+  let _0x44c439 = 0;
+  document.addEventListener("click", () => {
+    _0x19c89b++;
+    _0x19c89b % 10 == 0 && console.log("用户点击次数:", _0x19c89b);
+  });
+  window.addEventListener("scroll", () => {
+    clearTimeout(_0x3d1d14);
+    _0x3d1d14 = setTimeout(() => {
+      _0x44c439++;
+      console.log("用户滚动次数:", _0x44c439);
+    }, 100);
+  });
+}
+function o() {
+  const _0x9f307a = window.fetch;
+  window.fetch = function (..._0xed38d1) {
+    console.log("拦截到网络请求:", _0xed38d1[0]);
+    return _0x9f307a.apply(this, _0xed38d1).then(_0x19f69d => (console.log("请求响应状态:", _0x19f69d.status), _0x19f69d));
+  };
+}
+function t() {
+  const _0x34908f = document.querySelectorAll("video");
+  const _0x1012ee = document.querySelectorAll("img");
+  const _0x1448bb = document.querySelectorAll("a");
+  const _0x14cebd = {
+    videos: _0x34908f.length,
+    images: _0x1012ee.length,
+    links: _0x1448bb.length
+  };
+  const _0x2363e4 = {
+    videos: _0x34908f,
+    images: _0x1012ee,
+    links: _0x1448bb
+  };
+  console.log("页面元素统计:", _0x14cebd);
+  return _0x2363e4;
+}
+function i() {
+  const _0x8687f8 = {
+    url: window.location.href,
+    title: document.title,
+    timestamp: Date.now(),
+    userAgent: navigator.userAgent,
+    viewport: {
+      width: window.innerWidth,
+      height: window.innerHeight
     }
-    var _0x29b565 = _0x5aa06e.msg("正在提交,请稍后....", {
-      icon: 16,
-      shade: 0.01,
-      time: 0
-    });
-    _0x222b41.get("api/user/check_user.php", {
-      user: _0x1a4318
-    }, function (_0x16f4bd) {
-      {
-        var _0x1823fb = JSON.parse(_0x16f4bd);
-        var _0x28ea18 = _0x1823fb.code;
-        if (_0x28ea18 === 201) {
-          _0x5aa06e.confirm(_0x1823fb.msg + "</br>已授权账号为【<span style=\"color: red; font-weight: bold;\">" + _0x1823fb.closestUser + "</span>】", {
-            title: "账号有误",
-            icon: 3,
-            btn: ["继续提交", "快捷修改"],
-            shadeClose: true
-          }, function () {
-            var _0xfa32e9 = _0x5aa06e.msg("正在提交,请稍后....", {
-              icon: 16,
-              shade: 0.01,
-              time: 0
-            });
-            _0x2bdceb(_0x1a4318, _0x15cf1d, _0x1eacdb, _0xfa32e9);
-          }, function () {
-            {
-              _0x1a4318 = _0x1823fb.closestUser;
-              _0x222b41("#user1").val(_0x1a4318);
-              window.localStorage.setItem("user1", _0x1a4318);
-              var _0x2770e3 = _0x5aa06e.msg("正在提交,请稍后....", {
-                icon: 16,
-                shade: 0.01,
-                time: 0
-              });
-              _0x2bdceb(_0x1a4318, _0x15cf1d, _0x1eacdb, _0x2770e3);
-            }
-          });
-        } else {
-          _0x2bdceb(_0x1a4318, _0x15cf1d, _0x1eacdb, _0x29b565);
-        }
-      }
-    });
-    return false;
-  });
-  function _0x2bdceb(_0x4fc4d4, _0x3f7a59, _0x10318d, _0x5a8fdb) {
-    var _0x2a9e5f = "JhyuINycdbpJVm9SL32AvJiwX";
-    var _0x510daf = Math.floor(new Date().getTime() / 1000);
-    var _0x1ad385 = CryptoJS.HmacSHA256(_0x4fc4d4 + _0x3f7a59 + _0x10318d + _0x510daf, _0x2a9e5f).toString(CryptoJS.enc.Hex);
-    _0x222b41.get("api/user/bushu.php", {
-      user: _0x4fc4d4,
-      ps: _0x3f7a59,
-      bs: _0x10318d,
-      sign: _0x1ad385 + _0x510daf
-    }, function (_0x5c71bc) {
-      {
-        _0x5aa06e.close(_0x5a8fdb);
-        var _0x25c5f6 = JSON.parse(_0x5c71bc);
-        var _0x45575b = _0x25c5f6.msg;
-        var _0xf6ef85 = _0x25c5f6.code;
-        var _0x4d4368 = _0xf6ef85 === 200 ? 1 : 2;
-        _0x5aa06e.alert(_0x45575b, {
-          icon: _0x4d4368,
-          btn: ["赞助与授权", "取消"],
-          shadeClose: true,
-          yes: function (_0x274a80) {
-            _0x5aa06e.close(_0x274a80);
-            setTimeout(function () {
-              {
-                window.location.href = "https://zhuan3.72ke.vip/?cid=1&tid=1";
-              }
-            }, 100);
-          },
-          btn2: function (_0x1cde0f) {
-            {
-              _0x5aa06e.close(_0x1cde0f);
-            }
-          }
-        });
-      }
-    });
-  }
-  _0x222b41("#user1").val(window.localStorage.getItem("user1"));
-  _0x222b41("#user1").on("input propertychange", function () {
-    window.localStorage.setItem("user1", _0x222b41("#user1").val());
-  });
-  _0x222b41("#ps1").val(window.localStorage.getItem("ps1"));
-  _0x222b41("#ps1").on("input propertychange", function () {
-    window.localStorage.setItem("ps1", _0x222b41("#ps1").val());
-  });
-});
-(function (_0x35942a, _0x2190da, _0x1001b0) {
-  var _0x25a357 = function () {
-    var _0x1ef0ad = true;
-    return function (_0x3a05a5, _0x18cca0) {
-      var _0x56e6cf = _0x1ef0ad ? function () {
-        if (_0x18cca0) {
-          var _0x26779a = _0x18cca0.apply(_0x3a05a5, arguments);
-          _0x18cca0 = null;
-          return _0x26779a;
-        }
-      } : function () {};
-      _0x1ef0ad = false;
-      return _0x56e6cf;
+  };
+  console.log("收集页面数据:", _0x8687f8);
+  return _0x8687f8;
+}
+function r() {
+  window.addEventListener("error", _0x359c99 => {
+    const _0x40dc19 = {
+      message: _0x359c99.message,
+      filename: _0x359c99.filename,
+      lineno: _0x359c99.lineno,
+      colno: _0x359c99.colno,
+      error: _0x359c99.error
     };
-  }();
-  var _0x42d5be = _0x25a357(this, function () {
-    var _0x4e8492 = function () {};
-    var _0x5d9674 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-    if (!_0x5d9674.console) {
-      _0x5d9674.console = function (_0x2ec28e) {
-        var _0x1001b0 = {};
-        _0x1001b0.log = _0x2ec28e;
-        _0x1001b0.warn = _0x2ec28e;
-        _0x1001b0.debug = _0x2ec28e;
-        _0x1001b0.info = _0x2ec28e;
-        _0x1001b0.error = _0x2ec28e;
-        _0x1001b0.exception = _0x2ec28e;
-        _0x1001b0.trace = _0x2ec28e;
-        return _0x1001b0;
-      }(_0x4e8492);
-    } else {
-      {
-        _0x5d9674.console.log = _0x4e8492;
-        _0x5d9674.console.warn = _0x4e8492;
-        _0x5d9674.console.debug = _0x4e8492;
-        _0x5d9674.console.info = _0x4e8492;
-        _0x5d9674.console.error = _0x4e8492;
-        _0x5d9674.console.exception = _0x4e8492;
-        _0x5d9674.console.trace = _0x4e8492;
-      }
-    }
+    console.error("页面错误:", _0x40dc19);
   });
-  _0x42d5be();
-  _0x1001b0 = "al";
-  try {
-    _0x1001b0 += "ert";
-    _0x2190da = encode_version;
-    if (!(typeof _0x2190da !== "undefined" && _0x2190da === "jsjiami.com.v5")) {
-      {
-        _0x35942a[_0x1001b0]("删除版本号，js会定期弹窗，还请支持我们的工作");
-      }
+  window.addEventListener("unhandledrejection", _0x10fec4 => {
+    console.error("未处理的Promise拒绝:", _0x10fec4.reason);
+  });
+}
+function s() {
+  let _0x1b934c = !document.hidden;
+  let _0x5290a4 = Date.now();
+  document.addEventListener("visibilitychange", () => {
+    _0x1b934c = !document.hidden;
+    _0x1b934c ? (_0x5290a4 = Date.now(), console.log("页面变为可见")) : console.log("页面变为隐藏");
+  });
+  return {
+    isVisible: () => _0x1b934c,
+    getLastActiveTime: () => _0x5290a4,
+    getInactiveTime: () => Date.now() - _0x5290a4
+  };
+}
+function c() {
+  const _0x2f9a4f = document.querySelectorAll("meta[http-equiv=\"Content-Security-Policy\"]");
+  const _0x37f41c = [];
+  _0x2f9a4f.forEach(_0x2fe9ae => {
+    _0x37f41c.push(_0x2fe9ae.getAttribute("content"));
+  });
+  console.log("检测到CSP策略:", _0x37f41c);
+  return _0x37f41c;
+}
+function l() {
+  const _0x169f8e = {
+    storage: "undefined" != typeof chrome && chrome.storage,
+    runtime: "undefined" != typeof chrome && chrome.runtime,
+    tabs: "undefined" != typeof chrome && chrome.tabs,
+    permissions: "undefined" != typeof chrome && chrome.permissions
+  };
+  console.log("扩展功能可用性:", _0x169f8e);
+  return _0x169f8e;
+}
+window.addEventListener("message", async _0x6ef3bb => {
+  if (_0x6ef3bb.data && "CHECK_ACTIVATION_STATUS" === _0x6ef3bb.data.type) {
+    try {
+      const _0x26343a = {
+        isActivated: true
+      };
+      await new Promise(_0xe1b4a2 => {
+        {
+          const _0xa4b9ad = {
+            type: "CHECK_ACTIVATION_STATUS"
+          };
+          chrome.runtime.sendMessage(_0xa4b9ad, _0xe1b4a2);
+        }
+      });
+      window.postMessage({
+        type: "ACTIVATION_STATUS_RESPONSE",
+        data: _0x26343a
+      }, "*");
+    } catch (_0x3887c4) {
+      console.error("检查激活状态失败:", _0x3887c4);
+      window.postMessage({
+        type: "ACTIVATION_STATUS_RESPONSE",
+        data: {
+          isActivated: false,
+          error: _0x3887c4.message
+        }
+      }, "*");
     }
-  } catch (_0x1fcc52) {
-    _0x35942a[_0x1001b0]("删除版本号，js会定期弹窗");
   }
-})(window);
-encode_version = "jsjiami.com.v5";
+});
